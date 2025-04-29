@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Python Masterclass</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: white;
+      border-radius: 10px;
+      padding: 50px;
+      width: 700px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      font-size: 20px;
+    }
+
+
+    h2 {
+      margin-top: 0;
+      color: #fff;
+      font-size: 24px;
+    }
+
+    .header {
+      background:#00a6dd;
+      padding: 15px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"] {
+      width: 100%;
+      padding: 16px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+font-size: 18px;
+    }
+
+    .payment-methods img {
+      width: 60px;
+      margin: 16px 8px;
+    }
+
+    button {
+      background-color: #00a6dd;
+      color: white;
+      border: none;
+      padding: 15px 50px;
+      border-radius: 5px;
+      margin-top: 15px;
+      cursor: pointer;
+      font-size: 20px;
+      width: 730px;
+    }footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: white;}
+.dark-mode{
+
+background-color: #121212;
+color:white;
+
+}
+  </style>
+</head>
+<body >
+
+<div>
+  <div class="header">
+    <h2>Python Masterclass</h2>
+    <p>Inscrivez-vous pour participer !</p>
+    
+  </div>
+  <div class="container">
+    <form>
+      <label>Nom :</label>
+      <input type="text" name="nom" required>
+
+      <label>Email :</label>
+      <input type="email" name="email" required>
+
+      <label>Mode de paiement :</label>
+      <div class="payment-methods">
+        <img src="https://img.icons8.com/color/48/visa.png" alt="Visa">
+        <img src="https://img.icons8.com/color/48/mastercard.png" alt="MasterCard">
+        <img src="https://img.icons8.com/color/48/paypal.png" alt="PayPal">
+      </div>
+
+      <label>Numéro de carte :</label>
+      <input type="text" name="carte" required>
+
+      <label>Date d'expiration :</label>
+      <input type="month" name="expiration" required>
+
+      <label>CVV :</label>
+      <input type="text" name="cvv" required>
+
+      <button type="submit">Payer</button>
+
+    </form>
+  </div>
+  
+</div>
+
+</body>
+</html>
